@@ -18,6 +18,10 @@ path = "udemy2024/SumOfDigitsFinder/main.rs"
 name = "ArrayOperationsInRust"
 path = "udemy2024/ArrayOperationsInRust/main.rs"
 
+[[bin]]
+name = "vector_operations_finding_primes"
+path = "udemy2024/VectorOperationsFindingPrimes/main.rs"
+
 # END
 
 [dependencies]
