@@ -22,6 +22,10 @@ path = "udemy2024/ArrayOperationsInRust/main.rs"
 name = "vector_operations_finding_primes"
 path = "udemy2024/VectorOperationsFindingPrimes/main.rs"
 
+[[bin]]
+name = "temperature_tracker"
+path = "udemy2024/TemperatureTracker/main.rs"
+
 # END
 
 [dependencies]
