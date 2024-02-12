@@ -15,6 +15,7 @@
 // -------- m1_enums START
 
 mod m1_enums;
+mod m2_structs;
 
 // use m1_enums::
 
