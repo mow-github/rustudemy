@@ -16,6 +16,7 @@
 
 mod m1_enums;
 mod m2_structs;
+mod m3_traits;
 
 // use m1_enums::
 
