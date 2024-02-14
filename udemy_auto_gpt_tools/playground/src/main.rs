@@ -17,9 +17,12 @@
 mod m1_enums;
 mod m2_structs;
 mod m3_traits;
-mod m4_polymothism;
+mod m4_polymorphism;
+mod m5_lifetimes;
 
 // use m1_enums::
+
+use m5_lifetimes::example_1_v3;
 
 // -------
 
@@ -36,5 +39,7 @@ fn main() {
     // println!("z: {}", z);    
 
     // let q = add_ten(x);
-    // println!("q: {}", q); 
+    // println!("q: {}", q);
+
+    example_1_v3(); 
 }
