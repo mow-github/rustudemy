@@ -1,3 +1,12 @@
+//
+//
+//
+// NOTE: u need "#[macro_export]" to export a macro and use in other files.. 
+//
+//
+// Declarative macros   - etc. "mad_skills"-macro
+// Procedural Macros    - allow creating syntax extensions as execution of a function. 3x variations: function, derive, attribute
+//
 
 #[cfg(test)]
 mod test {

@@ -23,6 +23,7 @@ mod m6_patterns;
 mod m7_async;
 mod m8_collections;
 mod m9_decl_macros;
+mod m10_proc_macros;
 
 // use m1_enums::
 
