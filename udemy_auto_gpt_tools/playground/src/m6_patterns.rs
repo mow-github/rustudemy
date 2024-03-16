@@ -1,4 +1,5 @@
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Message {
     Quit,
     ChangeColour(i32, i32, i32),
@@ -6,6 +7,7 @@ enum Message {
     Write(String),
 }
 
+#[allow(dead_code)]
 fn process_message(msg: Message) {
     match msg {
         Message::Quit => {
@@ -76,7 +78,7 @@ mod test {
 
         // ---
 
-        let some_res: Result<i32, &str> = Ok(50);
+        let _some_res: Result<i32, &str> = Ok(50);
         let some_err: Result<i32, &str> = Err("err here");
 
         let my_int = match some_err {
@@ -102,6 +104,7 @@ mod test {
 
     }
 
+    // println!("{}", text)
 
     // cargo test test_match_guard -- --nocapture
     #[test]
@@ -109,9 +112,9 @@ mod test {
 
         let pair: (i32, i32) = (2, -2);
         match pair {
-            (x, y) if x == y => println!("they match!"),
-            (x, y) if x + y == 0 => println!("they zero"),
-            (_, y) if y == 2 => println!("Y is indeed +2"),
+            (x, y) if x == y => println!("they match! {} == {}", x, y),
+            (x, y) if x + y == 0 => println!("they zero {} == {}", x, y),
+            (_, y) if y == 2 => println!("Y is indeed +2 {}", y),
             _ => println!("we are no bothered")
         };
     }    
@@ -128,9 +131,9 @@ mod test {
         let location = Location{x: 0, y: 20};
 
         match location {
-            Location{x, y: 0} => println!("y is on the axis"),
-            Location{x: 0, y} => println!("x is on the axis"),
-            Location{x, y} => println!("none is on the axis"),
+            Location{x: _, y: 0} => println!("y is on the axis"),
+            Location{x: 0, y: _} => println!("x is on the axis"),
+            Location{x: _, y: _} => println!("none is on the axis"),
         };
 
         

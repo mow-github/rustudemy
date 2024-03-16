@@ -24,6 +24,7 @@ impl EthAddress for Address {
     }
 }
 
+#[allow(dead_code)]
 fn get_eth_data<T: EthAddress>(address: T) -> Address {
     let converted_address = address.convert_address().unwrap();
     converted_address

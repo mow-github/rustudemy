@@ -108,6 +108,7 @@ pub fn example_1_v4() {
 }
 
 // examplw struct with a lifetime incl fn below
+#[allow(dead_code, unused_variables)]
 struct Person<'p> {
     name: &'p str,
     points: &'p f32

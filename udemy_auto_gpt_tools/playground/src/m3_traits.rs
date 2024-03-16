@@ -6,6 +6,7 @@ trait Attacker {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Character {
     Warrior,
     Archer,

@@ -1,6 +1,7 @@
 
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum CarColour {
     Red,
     Green,
@@ -9,22 +10,26 @@ enum CarColour {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum GivenResult<T, E> {
     Ok(T),
     Err(E)
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum GivenOption<T> {
     None,
     Some(T)
 }
 
+#[allow(dead_code)]
 fn create_car_colour_blue() -> CarColour {
     let my_car_colour: CarColour = CarColour::Blue;
     my_car_colour
 }
 
+#[allow(dead_code)]
 fn check_under_five(num_check: u8) -> GivenResult<u8, String> {
     if num_check < 5 {
         GivenResult::Ok(num_check)
@@ -33,6 +38,7 @@ fn check_under_five(num_check: u8) -> GivenResult<u8, String> {
     }
 }
 
+#[allow(dead_code)]
 fn remainder_zero(num_check: f32) -> GivenOption<f32> {
     let remainder: f32 = num_check % 10.0;
     if remainder != 0.0 {
@@ -42,6 +48,8 @@ fn remainder_zero(num_check: f32) -> GivenOption<f32> {
     }
 }
 
+
+#[allow(dead_code)]
 fn remainder_zero_builtin(num_check: f32) -> Option<f32> {
     let remainder: f32 = num_check % 10.0;
     if remainder != 0.0 {
@@ -71,7 +79,10 @@ mod test {
         dbg!(remainder);
 
         let remainder_builtin = remainder_zero_builtin(2.2);
+
         let value = remainder_builtin.unwrap();
+        dbg!(value);
+
 
     }
 }

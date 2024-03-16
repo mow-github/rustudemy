@@ -1,7 +1,5 @@
 use std::io::{Error, ErrorKind};
-
-
-
+#[allow(dead_code)]
 async fn my_async_call(url: &str) -> Result<serde_json::Value, reqwest::Error>{
 
     let response = reqwest::get(url)
@@ -12,6 +10,7 @@ async fn my_async_call(url: &str) -> Result<serde_json::Value, reqwest::Error>{
     Ok(response)
 }
 
+#[allow(dead_code)]
 async fn my_async_call_incl_error_handling(url: &str) -> Result<serde_json::Value, Error>{
 
 

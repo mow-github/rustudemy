@@ -56,8 +56,8 @@ mod test {
         // let some_var = mad_skills2!(i32);
         // dbg!(some_var);        
 
-        let mut x: Vec<i32> = vec!();
-        let mut y: Vec<i32> = my_vec!(1);    
+        let _x: Vec<i32> = vec!();
+        let _y: Vec<i32> = my_vec!(1);    
 
     }    
 }

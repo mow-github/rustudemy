@@ -1,5 +1,6 @@
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct User {
     username: String,
     email: String,
@@ -7,6 +8,7 @@ struct User {
     active: bool
 }
 
+#[allow(dead_code)]
 impl User {
     fn increment_sign_count(&mut self, nr: u64){
         self.sign_in_count += nr;    
@@ -17,6 +19,8 @@ impl User {
     }
 }
 
+
+#[allow(dead_code)]
 fn change_username(user: &mut User, new_username: &str) {
     user.username = String::from(new_username);
 }
